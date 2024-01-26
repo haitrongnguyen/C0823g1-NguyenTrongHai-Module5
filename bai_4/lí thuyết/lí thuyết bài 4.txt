@@ -1,0 +1,29 @@
+mounting
+chuẩn bị hiển thị trên màn hình
+update
+khi dữ liệu thay đổi, state thay đổi
+unmouting
+đóng kết nối db,hủy gọi api, và tối ưu hóa bộ nhớ
+----Hooks-----
+??Hooks là gì
+- Hooks là tính năng mới ở trong React V16.8, đây là nhứng hàm đặc biệt, được React tạo sẵn chho phép kết nối React state và lifecycle vào funcion components
+- Lợi ích:
+	+ Khiến các component trở nên gọn nhẹ
+	+ Giảm đáng kể số lượng code, dễ tiếp cận hơn
+	+ Không cần kiến thức về OOP
+Một số hooks hay dùng
+	- useState
+	- useEffect
+	- useLayoutEffect
+	.....
+???useStateHook
+	- cho phép thêm/lưu trữ state tới react funcion componennts
+	- EX: const[useName,setUserName]
+??useEffect
+	- chio phép xử lí logic trong vòng đời cửa components,
+và side effect,
+cácf trường hợp: callback luôn dược gọi sau khi component mouting
+	- useEffect(callback) callback mỗi khi conponents re-render, gọi callback sau khi component render(sau return)
+	-  useEffect(callback,[]), chỉ gọi callback 1 lần sau khi component mouting
+	-  useEffect(callback, [deps2]) callback được gọi lại khi deps thay đổi
+

@@ -1,0 +1,28 @@
+-React Hooks là gì?
+  + Hooks là những hàm cho phép “kết nối” React state và lifecycle vào các components sử dụng hàm.
+  + Với Hooks bạn có thể sử dụng state và lifecycles mà không cần dùng ES6 Class
+
+- Tại sao phải cần dùng hooks
+  + Khiến các component trở nên gọn nhẹ hơn
+  + Giảm đáng kể số lượng code, dễ tiếp cận
+  + Cho phép chúng ta sử dụng state ngay trong function component
+
+
+- useState hook khi nào dùng?
+  + Giúp chúng ta có thể dùng state trong functional component.
+  + Khi sử dụng useEffect để lấy dữ liệu, cần kiểm tra dữ liệu đã tồn tại hay chưa. Nếu không thì hàm sẽ gửi request liên tục.
+Có thể sử dụng tham số thứ hai của hàm useEffect() để chỉ định chỉ thực thi hàm khi biến thay đổi giá trị.
+
+- Trong class, chúng ta cần gọi this.setState()
+-Trong hàm (sử dụng với hooks), chúng ta đã có biến nên không cần this
+** const [username, setUsername] = useState(“default name”);
+
+
+- useEffect hook khi nào dùng ? Cách triển khai useEffect hook
+Effect Hook cho phép thực hiện side effect bên trong các function component
+
+ ** const [fullName, setFullName] = useState({name: 'name', familyName: 'family'}); 
+const [title,setTitle] = useState('useEffectQ in Hooks');
+//useEffect useEffect(() => {
+console.log('useEffect has been called!'); setFullName({name:'SonMc',familyName: 'CodeGym'});
+});
